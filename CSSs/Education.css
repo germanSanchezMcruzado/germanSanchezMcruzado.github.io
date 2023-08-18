@@ -6,7 +6,7 @@
 	width: auto;
 	height: auto;
 	background-color: var(--backgroundColor);
-	min-height: calc(max(500px, 50vw));
+	min-height: calc(max(90vw, 90vh));
 }
 
 .collapsible {
@@ -18,7 +18,7 @@
 	border: none;
 	text-align: left;
 	outline: none;
-	font-size: 1.5vw;
+	font-size: 2.5vw;
 	margin-top: 1vh;
 	opacity: 1;
 }
@@ -52,7 +52,32 @@
 
 .educationText {
 	justify-self: center;
-	font-size: 1vw;
+	font-size: 1.5vw;
 	color: var(--backgroundColor);
 	margin: 1vw;
+}
+
+@media (max-width: 576px) {
+    .collapsible {
+        font-size: 3.5vw; 
+        margin-top: 2vh;
+    }
+
+    .educationText {
+        font-size: 3vw;
+        margin: 2vw; 
+    }
+}
+
+/* Responsive styles for medium screens (up to 768px) */
+@media (max-width: 768px) {
+    .collapsible {
+        font-size: 3vw; 
+        margin-top: 1vh; 
+    }
+
+    .educationText {
+        font-size: 2.5vw; 
+        margin: 1.5vw; 
+    }
 }

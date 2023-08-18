@@ -370,20 +370,19 @@ html {
 	.introductionImageTitle {
 		position: absolute;
 		display: inline-block;
-		font-size: 3vw;
-		width: 30vw;
-		left: 10vw;
-		top: 7vh;
+		font-size: 4vw;
+		width: 40vw;
+		left: 11.5vw;
+		top: 8vh;
 		opacity: 0;
 	}
 
 	.introductionImage {
-		height: 40vw;
+		height: 50vw;
 		opacity: 0;
 		transform: translateX(-20rem);
 		animation: introductionImageAnimation 1.5s ease-in-out 0.5s forwards;
-		border-radius: 30%;
-		/* Add border radius for experience level */
+		border-radius: 40%;
 	}
 }
 
@@ -392,19 +391,19 @@ html {
 	.introductionImageTitle {
 		position: absolute;
 		display: inline-block;
-		font-size: 3vw;
-		width: 30vw;
-		left: 10vw;
-		top: 7vh;
+		font-size: 4vw;
+		width: 40vw;
+		left: 6.5vw;
+		top: 8vh;
 		opacity: 0;
 	}
 
 	.introductionImage {
-		height: 40vw;
+		height: 50vw;
 		opacity: 0;
 		transform: translateX(-20rem);
-		border-radius: 30%;
-		/* Add border radius for experience level */
+		animation: introductionImageAnimation 1.5s ease-in-out 0.5s forwards;
+		border-radius: 40%;
 	}
 }
 
@@ -413,10 +412,10 @@ html {
 	.introductionImageTitle {
 		position: absolute;
 		display: inline-block;
-		font-size: 2vw;
-		width: 30vw;
+		font-size: 4vw;
+		width: 40vw;
 		left: 6.5vw;
-		top: -1.0vh;
+		top: 8vh;
 		opacity: 0;
 	}
 
@@ -675,18 +674,18 @@ html {
 /* Extra small devices (less than 600px) */
 @media only screen and (max-width: 600px) {
 	.introductionCareerTitle {
-		font-size: 0.85vw;
+		font-size: 1.85vw;
 	}
 
 	.introductionPresentationText {
-		font-size: 1.5vw;
+		font-size: 2vw;
 		width: 20vh;
 		height: auto;
 	}
 
 	.introductionExperienceText {
-		font-size: 0.75vw;
-		width: 10vh;
+		font-size: 1.85vw;
+		width: 15vh;
 		height: auto;
 	}
 

@@ -101,20 +101,18 @@
 
 .portfolioTitle {
 	display: inline;
-	font-family: monospace;
 	color: var(--textImportantColor);
 	text-align: center;
 	text-align: justify;
 }
 
 .portfolioDescriptionText {
-	font-family: monospace;
-	color: var(--textNormalColor);
-	text-align: center;
-	text-align: justify;
-	font-size: smaller;
-	margin: 1vw;
-
+    color: var(--textNormalColor);
+    text-align: center;
+    text-align: justify;
+    font-size: smaller;
+    margin: 1vw;
+    overflow: none; 
 }
 
 .downloadButton {
@@ -152,6 +150,11 @@
 	.portfolioDescriptionText {
 		font-size: 1.1vw;
 	}
+
+	.portfolioDescriptionText {
+		max-height: 7vw;
+		overflow: scroll;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -164,6 +167,11 @@
 	.portfolioDescriptionText {
 		font-size: 1.0vw;
 	}
+
+	.portfolioDescriptionText {
+		max-height: 7vw;
+		overflow: scroll;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -174,6 +182,11 @@
 
 	.portfolioDescriptionText {
 		font-size: 1.0vw;
+	}
+
+	.portfolioDescriptionText {
+		max-height: 7vw;
+		overflow: scroll;
 	}
 }
 
