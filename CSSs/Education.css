@@ -6,7 +6,7 @@
 	width: auto;
 	height: auto;
 	background-color: var(--backgroundColor);
-	min-height: calc(max(90vw, 90vh));
+	min-height: calc(max(100vw, 100vh));
 }
 
 .collapsible {
