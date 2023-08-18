@@ -1,0 +1,58 @@
+.education {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	width: auto;
+	height: auto;
+	background-color: var(--backgroundColor);
+	min-height: calc(max(500px, 50vw));
+}
+
+.collapsible {
+	background-color: var(--textNormalColor);
+	color: var(--backgroundColor);
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 1.5vw;
+	margin-top: 1vh;
+	opacity: 1;
+}
+
+.activeEducation,
+.collapsible:hover {
+	background-color: var(--textImportantColor)
+}
+
+.collapsible:after {
+	content: '\002B';
+	color: var(--backgroundColor);
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.activeEducation:after {
+	content: "\2212";
+}
+
+.educationContent {
+	padding: 0 18px;
+	max-height: 0;
+	width: 100%;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: var(--textNormalColor);
+	opacity: 1;
+}
+
+.educationText {
+	justify-self: center;
+	font-size: 1vw;
+	color: var(--backgroundColor);
+	margin: 1vw;
+}
