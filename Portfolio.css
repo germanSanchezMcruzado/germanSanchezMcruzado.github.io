@@ -1,0 +1,203 @@
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	width: auto;
+	height: auto;
+	background-color: var(--textNormalColor);
+}
+
+.portfolioContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: start;
+	align-items: center;
+	width: 90%;
+	height: auto;
+	gap: 5%;
+}
+
+.flipCard {
+	background-color: transparent;
+	width: 30%;
+	margin-bottom: 4vw;
+	perspective: 1000px;
+}
+
+/* Media Queries */
+/*#region*/
+/* Extra small devices (less than 600px) */
+@media only screen and (max-width: 600px) {
+	.flipCard {
+		height: 20vw;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.flipCard {
+		height: 20vw;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.flipCard {
+		height: 20vw;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.flipCard {
+		height: 20vw;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.flipCard {
+		height: 20vw;
+	}
+}
+
+/*#endregion*/
+
+.flipCardInner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flipCard:hover .flipCardInner {
+	transform: rotateY(180deg);
+}
+
+.flipCardFront,
+.flipCardBack {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.flipCardFront {
+	background-color: transparent;
+	color: black;
+}
+
+.flipCardBack {
+	background-color: var(--backgroundColor);
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.portfolioTitle {
+	display: inline;
+	font-family: monospace;
+	color: var(--textImportantColor);
+	text-align: center;
+	text-align: justify;
+}
+
+.portfolioDescriptionText {
+	font-family: monospace;
+	color: var(--textNormalColor);
+	text-align: center;
+	text-align: justify;
+	font-size: smaller;
+	margin: 1vw;
+
+}
+
+.downloadButton {
+	text-decoration: none;
+	font-family: monospace;
+	background-color: var(--textImportantColor);
+	border: none;
+	color: var(--backgroundColor);
+	padding: 1vw 2vw;
+	cursor: pointer;
+	font-size: 1.1vw;
+}
+
+.downloadLink {
+	position: absolute;
+	top: 70%;
+	width: 40%;
+	right: 30%;
+	text-decoration: none;
+}
+
+/* Darker background on mouse-over */
+.downloadButton:hover {
+	transform: scale(1.05);
+}
+
+/*Media*/
+/*#region*/
+/* Extra small devices (less than 600px) */
+@media only screen and (max-width: 600px) {
+	.portfolioTitle {
+		font-size: 1.5vw;
+	}
+
+	.portfolioDescriptionText {
+		font-size: 1.1vw;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+	.portfolioTitle {
+		font-size: 1.4vw;
+	}
+
+	.portfolioDescriptionText {
+		font-size: 1.0vw;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.portfolioTitle {
+		font-size: 1.4vw;
+	}
+
+	.portfolioDescriptionText {
+		font-size: 1.0vw;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.portfolioTitle {
+		font-size: 1.3vw;
+	}
+
+	.portfolioDescriptionText {
+		font-size: 0.9vw;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+	.portfolioTitle {
+		font-size: 1.25vw;
+	}
+
+	.portfolioDescriptionText {
+		font-size: 0.8vw;
+	}
+}
+
+/*#endregion*/

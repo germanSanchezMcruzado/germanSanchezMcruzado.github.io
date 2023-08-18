@@ -1,0 +1,263 @@
+/*AboutTitle*/
+/*#region*/
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: auto;
+	height: auto;
+	background-color: var(--textNormalColor);
+}
+
+/*#endregion*/
+
+/*AboutDiv*/
+/*#region*/
+.aboutDiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: stretch;
+	width: 90%;
+	height: auto;
+}
+
+/*ScienceDiv*/
+.aboutScienceImage {
+	opacity: 0;
+	position: relative;
+	display: inline;
+	top: 0%;
+	width: auto;
+	margin-left: 2.5vw;
+}
+
+.scienceDiv {
+	display: flex;
+	flex-direction: column;
+	gap: 20%;
+	margin-top: 20%;
+}
+
+#visible.aboutScienceImage {
+	animation: introductionImageAnimation 1.5s ease-in-out 0.5s forwards,
+		slideInRight 1.5s ease-in-out 0.5s forwards;
+}
+
+@media only screen and (max-width: 600px) {
+
+	.aboutScienceImage {
+		height: 10vw;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+
+	.aboutScienceImage {
+		height: 17vw;
+	}
+}
+
+@media only screen and (min-width: 780px) {
+
+	.aboutScienceImage {
+		height: 16vw;
+	}
+}
+
+@media only screen and (min-width: 950px) {
+
+	.aboutScienceImage {
+		height: 14vw;
+	}
+}
+
+/*#region*/
+
+
+/*#endregion*/
+
+/*TextDiv*/
+/*#region*/
+.aboutTextDiv {
+	display: flex;
+	flex-direction: column;
+	margin-left: 0vw;
+	align-items: center;
+	height: auto;
+	width: auto;
+}
+
+.aboutHighlighted {
+	color: var(--backgroundColor);
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+	opacity: 0;
+}
+
+.aboutPresentationText {
+	display: inline;
+	font-family: monospace;
+	color: var(--backgroundColor);
+	text-align: center;
+	text-align: justify;
+	opacity: 0;
+}
+
+#visible.aboutHighlighted {
+	animation: introductionSocialNetworkFadingAnimation 1s ease-in-out 1s forwards,
+		pulse 1s ease-in-out 1s forwards;
+}
+
+#visible.aboutPresentationText {
+	animation: introductionSocialNetworkFadingAnimation 1s ease-in-out 1s forwards,
+		pulse 1s ease-in-out 1s forwards;
+}
+
+/*Media*/
+/*#region*/
+/* Extra small devices (less than 600px) */
+@media only screen and (max-width: 600px) {
+	.aboutPresentationText {
+		font-size: 2.2vw;
+		width: 60vw;
+		height: auto;
+	}
+
+	.aboutHighlighted {
+		font-size: 2.2vw;
+		width: 10vh;
+		height: auto;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+	.aboutPresentationText {
+		font-size: 2vw;
+		width: 55vw;
+		height: auto;
+	}
+
+	.aboutHighlighted {
+		font-size: 2.1vw;
+		width: 30vw;
+		height: auto;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.aboutPresentationText {
+		font-size: 1.8vw;
+		width: 55vw;
+		height: auto;
+	}
+
+	.aboutHighlighted {
+		font-size: 2.1vw;
+		width: 30vw;
+		height: auto;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.aboutPresentationText {
+		font-size: 1.7vw;
+		width: 55vw;
+		height: auto;
+	}
+
+	.aboutHighlighted {
+		font-size: 1.8vw;
+		width: 25vw;
+		height: auto;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+	.aboutPresentationText {
+		font-size: 1.5vw;
+		width: 55vw;
+		height: auto;
+	}
+
+	.aboutHighlighted {
+		font-size: 1.6vw;
+		width: 40vw;
+		height: auto;
+	}
+}
+
+/*#endregion*/
+
+/*#region*/
+
+
+/*#endregion*/
+
+/*ArtDiv*/
+.aboutArtImage {
+	opacity: 0;
+	position: relative;
+	display: inline;
+	width: auto;
+	margin-right: 2.5vw;
+}
+
+.artDiv {
+	display: flex;
+	flex-direction: column;
+	gap: 20%;
+	margin-top: 0;
+}
+
+#visible.aboutArtImage {
+	animation: introductionImageAnimation 1.5s ease-in-out 0.5s forwards,
+		slideInLeft 1.5s ease-in-out 0.5s forwards;
+}
+
+/*Media*/
+/*#region*/
+@media only screen and (max-width: 600px) {
+
+	.aboutArtImage {
+		height: 10vw;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+
+	.aboutArtImage {
+		height: 17vw;
+	}
+}
+
+@media only screen and (min-width: 780px) {
+
+	.aboutArtImage {
+		height: 16vw;
+	}
+}
+
+@media only screen and (min-width: 950px) {
+
+	.aboutArtImage {
+		height: 14vw;
+	}
+}
+
+/*#endregion*/
+
+/*#region*/
+
+
+/*#endregion*/
+
+/*#endregion*/
